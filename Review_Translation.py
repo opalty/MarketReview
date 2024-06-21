@@ -16,6 +16,7 @@ target_language = input("Enter the target language code (e.g., en for English, j
 
 # 번역을 위한 함수
 def translate_text(text, target_language):
+    #Exchangerate_API 사용
     url = "https://naveropenapi.apigw.ntruss.com/nmt/v1/translation"
     headers = {
         "X-NCP-APIGW-API-KEY-ID": papago_client_id,

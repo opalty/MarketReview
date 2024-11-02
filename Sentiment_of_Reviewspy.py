@@ -17,8 +17,8 @@ df = df[df['Review'] != '']
 review_texts = df['Review'].tolist()
 
 # 네이버 클라우드 감정 분석 API 설정
-client_id = "hnxg2izuff".strip()
-client_secret = "NctXoUBArSam4j2ttIdcIQlaPX2vw0MnLmZiNAdZ".strip()
+client_id = client_id.strip()
+client_secret = client_secret.strip()
 url = "https://naveropenapi.apigw.ntruss.com/sentiment-analysis/v1/analyze"
 headers = {
     "X-NCP-APIGW-API-KEY-ID": client_id,

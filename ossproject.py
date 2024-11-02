@@ -72,8 +72,8 @@ df = df[df['Review'] != '']
 review_texts = df['Review'].tolist()
 
 # 네이버 클라우드 감정 분석 API 설정
-client_id = "hnxg2izuff".strip()
-client_secret = "NctXoUBArSam4j2ttIdcIQlaPX2vw0MnLmZiNAdZ".strip()
+client_id = client_id.strip()
+client_secret = client_secret.strip()
 url = "https://naveropenapi.apigw.ntruss.com/sentiment-analysis/v1/analyze"
 headers = {
     "X-NCP-APIGW-API-KEY-ID": client_id,
@@ -138,8 +138,8 @@ print(positive_reviews[['Review', 'Sentiment']])
 
 
 # 파파고 번역 API 설정
-papago_client_id = "vsffe7umav".strip()
-papago_client_secret = "cCmMOJvVluQYkO1tpoGqIq3iNHrYqK9aq0JGwgXO".strip()
+papago_client_id = "client_id".strip()
+papago_client_secret = "client_secret".strip()
 
 # 사용자로부터 번역할 언어 코드 입력 받기
 target_language = input("Enter the target language code (e.g., en for English, ja for Japanese es for Spanish): ").strip()
